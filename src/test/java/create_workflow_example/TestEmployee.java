@@ -9,14 +9,15 @@ public class TestEmployee {
 
         List<Employee> employees= new ArrayList<>();
 
-        employees.add(Employee.builder().employeeId(3).employeeName("Sara").build());
-        employees.add(Employee.builder().employeeId(4).employeeName("myname").build());
+        employees.add(Employee.builder().employeeId(1).employeeName("name1").build());
+        employees.add(Employee.builder().employeeId(2).employeeName("name2").build());
         //System.out.println(employees);
         employees.add(Employee.builder().employeeName("noname").build());
         // System.out.println(employees);
-        employees.add(new Employee("asdf",5));
+        employees.add(new Employee("name4",4));
+        employees.add(new Employee("name5",5));
         employees.add(Employee.builder().build());
         System.out.println(employees);
-        employees.stream().filter(employee -> Objects.nonNull(employee)).forEach(System.out::println);
+       // employees.stream().filter(employee -> Objects.nonNull(employee)).forEach(System.out::println);
     }
 }

@@ -10,6 +10,7 @@ public class TestEmployeeDao {
         empdao.employees.remove(1);
         empdao.employees.remove(0);
         Employee demoEmployee= empdao.get(0);
+        System.out.println(demoEmployee);
         //  empdao.update(demoEmployee, String[] {
         //          "1","Hugo"});
         System.out.println(empdao.getAll());

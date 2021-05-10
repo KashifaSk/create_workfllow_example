@@ -14,6 +14,8 @@ public class TestEmployeeDao {
         System.out.println(demoEmployee);
         //  empdao.update(demoEmployee, String[] {
         //          "1","Hugo"});
+
+        
         System.out.println(empdao.getAll());
     }
 }
